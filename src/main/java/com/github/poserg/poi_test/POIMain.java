@@ -78,10 +78,10 @@ public class POIMain {
 		
 		
 		// Total
-		Row totalRow = sheet.createRow(shift + tableSize);
+		Row totalRow = sheet.createRow(sheet.getLastRowNum() + 1);
 		totalRow.createCell(0).setCellValue("ИТОГО:");
 		
-		Row tableFooter = sheet.createRow(shift + tableSize + 1);
+		Row tableFooter = sheet.createRow(sheet.getLastRowNum() + 1);
 		createHeader(tableFooter);
 	}
 
